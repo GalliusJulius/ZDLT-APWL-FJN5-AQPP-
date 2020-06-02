@@ -38,7 +38,6 @@ with open('data/input.json') as input:
             "id": i["id"],
             "actions":[]
         })
-        print(actors[0])
         for k in actors:
             output["rentals"][i["id"]-1]["actions"].append({
                 "who":k[0],
