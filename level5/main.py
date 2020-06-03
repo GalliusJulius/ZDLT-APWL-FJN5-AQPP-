@@ -25,7 +25,7 @@ def getTime(dateStart,dateEnd):
 #Update ammount et set options on the json output
 def setOptions(data,output):
     #Dictionnaire => type (price,number in action)
-    dicoOptions={"gps":[5,1],"baby_seat":[2,1],"additional_insurance":[10,4]}
+    dicoOptions={"gps":[500,1],"baby_seat":[200,1],"additional_insurance":[1000,4]}
     #I assume rental_id in options (input) correspon to rentals[retals_id-1] (output)
     for k in data["options"]:
         output["rentals"][k["rental_id"] - 1]["options"].append(k["type"])
